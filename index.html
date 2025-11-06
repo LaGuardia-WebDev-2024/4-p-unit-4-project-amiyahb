@@ -3,7 +3,7 @@ Requirements
 [ ] Three Distinct CSS font-family Declarations
 [yes] One Google Font or Uploaded Font
 [yes] An Unordered **or** Ordered List (<ul> or <ol>)
-[ ] Three Images
+[yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
@@ -30,6 +30,10 @@ Select ONE Additional Feature to Add
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Fredericka+the+Great&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Fredericka+the+Great&family=Goblin+One&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
   <style>
 
@@ -79,6 +83,7 @@ h3 {
   line-height: 1.5em;
   background: rgb(157, 215, 241);
   border-radius: 230px 15px 230px 15px/15px 230px 15px 230px;
+  text-align: center;
 }
 
 .Frozen {
@@ -89,6 +94,41 @@ h3 {
       text-align: center; 
             border: 1px solid;
     }
+
+    #List {
+      display: inline-block;
+      width: 25%;
+      padding: 1em;
+      line-height: 1.5em;
+      background: rgb(172, 235, 153);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 225px;
+      text-align: center;
+    }
+
+    .City {
+      font-family: "Goblin One", serif;
+    }
+
+    #island {
+      display: inline-block;
+      width: 90%;
+      padding: 1em;
+      line-height: 1.5em;
+      background: rgba(34, 221, 174, 0.411);
+      border-radius: 230px 15px 230px 15px/15px 230px 15px 230px;
+      text-align: center;
+    }
+
+    #Island {
+      display: inline-block;
+      width: 90%;
+      padding: 1em;
+      line-height: 1.5em;
+      background: rgba(34, 221, 174, 0.411);
+      border-radius: 230px 15px 230px 15px/15px 230px 15px 230px;
+      text-align: center;
+    }
+   
   </style>
 </head>
 <body>
@@ -102,13 +142,16 @@ h3 {
   <p class="Park" id="Pehlam">There are lots of walkways and water views at Pehlam Bay Park. There is also a lot of wildlife and trees that you and see and enjoy as you stroll by. I personally like to walk by here because I see so many barbques, birds, and trees. I find so much tranquility just by walking here. 
   </p>
   <h4 class="Park" id="Bay">Fun facts about Pelham Bay Park</h4>
-  <ul class="Park">
+  <ul class="Park" id="List">
       <li> It's the biggest public park in New York City, covering about 2,772 acres (1,122 ha).</li>
       <li>several peninsulas here</li>
       <li>offers a 36-hole course that offers ample practice facilities, a pro shop, and a snack bar</li>
   </ul>
   <img src="https://www.nycgovparks.org/photo_gallery/full_size/24735.jpg" alt="Picture of Pehlam Bay Park" width="300">
+  <img src="https://www.nycgovparks.org/photo_gallery/full_size/22691.jpg" alt="Picture of Pehlam Bay Park" width="300">
+  <img src="https://images.squarespace-cdn.com/content/v1/5ddd936858f32e7b23f031d9/1617025571391-TNWFIG754A8CJJSG5OKU/2020-03-04+10.58.34+1.jpg" alt="Picture of Pehlam Bay Park" width="300">
   <br><br>
+  
 
   <h3 class="Frozen">Frozen D Lite</h3>
   <hr>
@@ -136,13 +179,25 @@ h3 {
             $6.99 - $8.50<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             $6.99
           </td>
-        
       </tr>
+    </tbody>
+ </table>
   <br><br>
 
-  <h3>Content Element 3</h3>
+  <h3 class="City">City Island</h3>
   <hr>
-  <p>About Content Element #3</p>
+  <p class="City" id="Island">City Island my the ideal place to go if I want seafood or a place to sit and think. City Island is very to itself and they have their own little community. They are very well-known to have some of the best seafood resturants. Some of the resturants are:</p>
+  <ul class="City">
+    <li>City Island Lobster House</li>
+    <li>Sammys Fish Box</li>
+    <li>The Original Crab Shanty Resturant</li>
+    <li>Johnny's Reef Resturant</li>
+  </ul>
+  <img src="https://johnnysreefrestaurant.com/wp-content/uploads/2020/08/E01D7790-83C3-437E-AAD2-68EA2FB3411A-1024x1022.jpg" alt="City Island Resturants" width="300">
+  <img src="https://api-prod.gothamist.com/images/52652/fill-700x467%7Cformat-webp%7Cwebpquality-70/" alt="City Island Resturants" width="300">
+  <img src="https://images.ctfassets.net/1aemqu6a6t65/3IH9vFXikKG1ueQYFjzZ7p/39f7c15a7f8f34e67835e487a9e596ca/sammys_54" alt="Picture of Sammys Fish Box" width="300">
+
+  <p class="City" id="island">Since City Island is by lots of water there are many yachts and boats by the waterfronts. Additionally, the seagulls are always wide awake all throughout city island. You could hear their yells a mile away but no matter the volume of the seagulls coming to City Island always makes me feel at home.</p>
   <br><br>
 
 </body>
