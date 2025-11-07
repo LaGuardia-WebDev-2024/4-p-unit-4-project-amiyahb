@@ -1,15 +1,15 @@
 <!--Unit 4 Project
 Requirements
-[ ] Three Distinct CSS font-family Declarations
-[yes] One Google Font or Uploaded Font
-[yes] An Unordered **or** Ordered List (<ul> or <ol>)
-[yes ] Three Images
+[ yes ] Three Distinct CSS font-family Declarations
+[ yes ] One Google Font or Uploaded Font
+[ yes ] An Unordered **or** Ordered List (<ul> or <ol>)
+[ yes ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include :hover Effect 
 [ no ] Feature 2 - Change the <li> markers
 [ no ] Feature 3 - Change the Favicon
-[ no ] Feature 4 - Include Hand Drawn Border
+[ yes ] Feature 4 - Include Hand Drawn Border
 [ no ] Feature 5 - Use background-blend-mode: overlay
 -->
 
@@ -38,7 +38,14 @@ Select ONE Additional Feature to Add
   <style>
 
 body {
-  background-color: aliceblue;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>🌟</text></svg>") 16 0,auto; /*!emojicursor.app*/
+  animation: colorChange 4s infinite alternate;
+}
+
+
+@keyframes colorChange {
+  0%{background-color: aliceblue;}
+  100%{background-color: rgb(14, 94, 163);}
 }
 
 h1 {
@@ -58,9 +65,10 @@ h2 {
   font-family: "Fredericka the Great", serif;
 }
 
-h3 {
+h3{
   font-size: 2em;
 }
+
 
 #Pehlam {
   display: inline-block;
@@ -129,6 +137,7 @@ h3 {
       text-align: center;
     }
    
+
   </style>
 </head>
 <body>
@@ -137,7 +146,9 @@ h3 {
   
   <h2>My "go to" places</h2>
 
-  <h3 class="Park">Pehlam Bay Park</h3>
+  <p>Table of Context: <a href="#green"> Pehlam Bay Park</a>, <a href="#cold"> Frozen D Lite</a>, <a href="#fish"> City Island</a> </p>
+
+  <h3 class="Park" id="green">Pehlam Bay Park</h3>
   <hr>
   <p class="Park" id="Pehlam">There are lots of walkways and water views at Pehlam Bay Park. There is also a lot of wildlife and trees that you and see and enjoy as you stroll by. I personally like to walk by here because I see so many barbques, birds, and trees. I find so much tranquility just by walking here. 
   </p>
@@ -153,7 +164,7 @@ h3 {
   <br><br>
   
 
-  <h3 class="Frozen">Frozen D Lite</h3>
+  <h3 class="Frozen" id="cold">Frozen D Lite</h3>
   <hr>
   <p id="Lite" class="Frozen">This is one of my favorite places to go to get acai bowls, crepes, frozen yogert, etc. It is so efficient because it is close to home and they have everything that you would want when you desire something sweet. They also offer healthy juicies if you want to boost your immune system.</p>
 
@@ -184,7 +195,7 @@ h3 {
  </table>
   <br><br>
 
-  <h3 class="City">City Island</h3>
+  <h3 class="City" id="fish">City Island</h3>
   <hr>
   <p class="City" id="Island">City Island my the ideal place to go if I want seafood or a place to sit and think. City Island is very to itself and they have their own little community. They are very well-known to have some of the best seafood resturants. Some of the resturants are:</p>
   <ul class="City">
